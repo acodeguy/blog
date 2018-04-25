@@ -55,6 +55,10 @@ header {
   z-index: 10;
 }
 
+#project-info {
+  margin-bottom: 25px;
+}
+
 /* links */
 a {
   color: rgba(0,0,0,1);
