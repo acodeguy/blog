@@ -1,0 +1,61 @@
+#app {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+}
+
+header {
+  margin: 0 0 50px 0;
+}
+
+#auth_user_controls {
+  margin: 10px 0 15px 0;
+}
+
+.index-post-card {
+  margin: 0 auto 10px;
+  width: 100%;
+  border: 3px solid black;
+}
+
+.card-text {
+  font-size: 18px;
+}
+
+.card-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.comment-card {
+  margin: 10px 0 0 0;
+  border: 1px solid black;
+}
+
+.comment-card .card-header {
+  text-transform: uppercase;
+}
+
+#comments-title {
+  background-color: rgba(0,0,0,1);
+  color: rgba(255,255,255,1);
+  letter-spacing: 0.25em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 25px 0 5px 0;
+}
+
+.alert-success {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+/* links */
+a {
+  color: rgba(0,0,0,1);
+}
