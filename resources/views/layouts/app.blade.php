@@ -90,7 +90,7 @@
 
           <div id="project-info">
             <h1>{{ config('app.name') }}</h1>
-            <p>A blog site, running Laravel on by <a href="https://acodeguy.com">A Code Guy</a></p>
+            <p>A blog site, running on Laravel by <a href="https://acodeguy.com">A Code Guy</a></p>
             <a href="https://github.com/acodeguy/blog">
               <button type="button" class="btn btn-info">View/Clone the Source Code on GitHub</button>
             </a>
