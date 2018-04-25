@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', 'PostsController@index');
+Route::redirect('/','/posts',301);
+
 Route::get('/posts', 'PostsController@index');
 Route::get('/posts/new', 'PostsController@new');
 Route::get('/posts/{post}', 'PostsController@show');
