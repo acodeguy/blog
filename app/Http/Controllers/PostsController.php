@@ -49,7 +49,12 @@ class PostsController extends Controller
 
     public function store(Request $post)
     {
-      
+
+      $validatedData = $post->validate([
+        'title' => 'required|min:5|max:255',
+        'body' => 'required|min:5|max:21844',
+      ]);
+
       $new_post = new Post;
       $new_post->title = $post->title;
       $new_post->body = $post->body;
@@ -58,7 +63,6 @@ class PostsController extends Controller
 
       session()->flash('message','Post submitted!');
 
-      // redirect back to index
       return redirect('/posts');
     }
 }
