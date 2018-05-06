@@ -9,15 +9,18 @@
 - [x] add text posts
 - [x] delete posts - by authenticated user only (takes all associated comments with the post)
 - [x] add comments
-- [x] new post validation [4/5/2018]
+- [x] new post validation [4/MAY/2018]
 - [] User profiles
 - [] rich-text and images
-- [x] delete comments [4/5/2018]
+- [x] delete comments [4/MAY/2018]
 - [] update posts
 - [] post tags
 - [] update comments
 - [] snazzier UI
 - [] soft-deletion of posts (for possible retrieval later)
+
+## Issues
+1. [x] Delete comment button visible for all users, including guests [FIXED: 6/MAY/2018]
 
 
 ## Installation
