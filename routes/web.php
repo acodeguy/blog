@@ -19,5 +19,6 @@ Route::get('/posts/{post}', 'PostsController@show');
 Route::post('/posts/{post}/delete', 'PostsController@delete');
 Route::post('/posts', 'PostsController@store');
 Route::post('/posts/{post}/comments','CommentsController@store');
+Route::post('/posts/{post}/comments/delete/{comment}','CommentsController@delete');
 
 Auth::routes();

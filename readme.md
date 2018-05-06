@@ -12,7 +12,7 @@
 - [x] new post validation [4/5/2018]
 - [] User profiles
 - [] rich-text and images
-- [] delete comments
+- [x] delete comments [4/5/2018]
 - [] update posts
 - [] post tags
 - [] update comments

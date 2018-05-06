@@ -41,6 +41,12 @@
           <div class="text-muted">
             {{ $comment->created_at->diffForHumans() }}
           </div>
+          <div class="comment-controls">
+            <form action="/posts/{{ $post->id }}/comments/delete/{{ $comment->id }}" method="post">
+              @csrf
+              <button type="submit" class="btn btn-danger">Delete Comment</button>
+            </form>
+          </div>
         </div>
         </div>
       @endforeach

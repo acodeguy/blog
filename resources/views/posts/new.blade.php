@@ -4,17 +4,6 @@
 <div class="row">
   <div class="col-lg-12">
 
-    @if($errors->any())
-      <div class="alert alert-danger error">
-        <p>Sort out the below errors and we'll be good to go, buddy:</p>
-        <ul>
-          @foreach($errors->all() as $error)
-            <li>{{ $error }}</li>
-          @endforeach
-        </ul>
-      </div>
-    @endif
-
     <form class="" action="/posts" method="post">
       @csrf
       <div class="card index-post-card">
