@@ -4,23 +4,23 @@
 ## Info
 - Runs on Laravel 5.6
 
-## Features/Incoming Features
-- [x] user authentication
-- [x] add text posts
-- [x] delete posts - by authenticated user only (takes all associated comments with the post)
-- [x] add comments
-- [x] new post validation [4/MAY/2018]
-- [] User profiles
-- [] rich-text and images
-- [x] delete comments [4/MAY/2018]
-- [] update posts
-- [] post tags
-- [] update comments
-- [] snazzier UI
-- [] soft-deletion of posts (for possible retrieval later)
+## Features/Features Requests (REQ#)
+1. user authentication
+2. add text posts
+3. delete posts - by authenticated user only (takes all associated comments with the post)
+4. add comments
+5. new post validation [4/MAY/2018]
+6. user profiles
+7. rich-text and images
+8. delete comments [ADDED: 4/MAY/2018]
+9. update posts
+10. post tags
+11. update comments
+12. snazzier UI
+13. soft-deletion of posts (for possible retrieval later)
 
-## Issues
-1. [x] Delete comment button visible for all users, including guests [FIXED: 6/MAY/2018]
+## Issues (ISS#)
+1. Delete comment button visible for all users, including guests [FIXED: 6/MAY/2018]
 
 
 ## Installation

@@ -41,9 +41,9 @@
           <div class="text-muted">
             {{ $comment->created_at->diffForHumans() }}
           </div>
-          @if($post->user_id == Auth::id())
+          @if($comment->user_id == Auth::id())
             <div class="comment-controls">
-              <form action="/posts/{{ $post->id }}/comments/delete/{{ $comment->id }}" method="post">
+              <form action="/posts/{{ $post->id }}/comments/{{ $comment->id }}/delete" method="post">
                 @csrf
                 <button type="submit" class="btn btn-danger">Delete Comment</button>
               </form>
