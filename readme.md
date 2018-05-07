@@ -18,6 +18,7 @@
 11. update comments
 12. snazzier UI
 13. soft-deletion of posts (for possible retrieval later)
+14. move sour code button to nav area, condense text [ADDED: 7/MAY/18]
 
 ## Issues (ISS#)
 1. Delete comment button visible for all users, including guests [FIXED: 6/MAY/2018]

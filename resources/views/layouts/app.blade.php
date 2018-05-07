@@ -67,19 +67,23 @@
 
         <!-- buttons: new post, etc -->
 
-        @if(Auth::id())
           <ul class="nav" id="auth_user_controls">
-
             <li class="nav-item">
-              <a href="/posts/new">
+              <a class="nav-link" href="https://github.com/acodeguy/blog" target="_blank">
+                <button type="button" class="btn btn-info">Source Code @ GitHub</button>
+              </a>
+            </li>
+            @if(Auth::id())
+            <li class="nav-item">
+              <a class="nav-link" href="/posts/new">
                 <button type="button" class="btn btn-primary">
                   <i class="far fa-file"></i> New Post
                 </button>
               </a>
             </li>
-
+            @endif
           </ul>
-        @endif
+
       </header>
 
       <!-- main content -->
@@ -91,9 +95,6 @@
           <div id="project-info">
             <h1>{{ config('app.name') }}</h1>
             <p>A blog site, running on Laravel by <a href="https://acodeguy.com">A Code Guy</a></p>
-            <a href="https://github.com/acodeguy/blog">
-              <button type="button" class="btn btn-info">View/Clone the Source Code on GitHub</button>
-            </a>
           </div>
 
           @if($errors->any())
