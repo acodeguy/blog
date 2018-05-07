@@ -15,11 +15,24 @@
     </div>
 
     @if($post->user_id == Auth::id())
-    <!-- deletion form -->
-    <form action="/posts/{{ $post->id }}/delete" method="post">
-      @csrf
-      <button type="submit" class="btn btn-danger form-control">Delete this Post</button>
-    </form>
+
+    <div class="row">
+
+      <div class="col">
+        <a href="/posts/{{ $post->id }}/edit">
+          <button type="submit" class="btn btn-primary form-control">Edit Post</button>
+        </a>
+      </div>
+
+      <div class="col">
+        <form action="/posts/{{ $post->id }}/delete" method="post">
+          @csrf
+          <button type="submit" class="btn btn-danger form-control">Delete this Post</button>
+        </form>
+      </div>
+    </div>
+
+
     @endif
 
     <!-- comments -->
@@ -42,12 +55,18 @@
             {{ $comment->created_at->diffForHumans() }}
           </div>
           @if($comment->user_id == Auth::id())
-            <div class="comment-controls">
-              <form action="/posts/{{ $post->id }}/comments/{{ $comment->id }}/delete" method="post">
-                @csrf
-                <button type="submit" class="btn btn-danger">Delete Comment</button>
-              </form>
+
+            <div class="row">
+
+              <div class="col comment-controls">
+                <form action="/posts/{{ $post->id }}/comments/{{ $comment->id }}/delete" method="post">
+                  @csrf
+                  <button type="submit" class="btn btn-danger">Delete Comment</button>
+                </form>
+              </div>
+
             </div>
+
           @endif
         </div>
         </div>

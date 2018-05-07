@@ -4,7 +4,7 @@
 <div class="row">
   <div class="col-lg-12">
 
-    <form class="" action="/posts" method="post">
+    <form action="/posts" method="post">
       @csrf
       <div class="card index-post-card">
         <div class="card-title">

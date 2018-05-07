@@ -12,7 +12,6 @@ class PostsController extends Controller
 
     public function index()
     {
-
       $posts = Post::latest()->get();
 
       return view('posts.index', compact('posts'));
@@ -20,16 +19,39 @@ class PostsController extends Controller
 
     public function show($id)
     {
-
-      $post = Post::find($id);
+      $post = Post::findOrFail($id);
 
       return view('posts.show', compact('post'));
+    }
+
+    public function edit($post)
+    {
+      $post = Post::findOrFail($post);
+
+      return view('posts.edit',compact('post'));
+    }
+
+    public function update($post, Request $new_data)
+    {
+      $validatedData = $new_data->validate([
+        'title' => 'required|min:5|max:255',
+        'body' => 'required|min:5|max:21844',
+      ]);
+
+      $p = Post::findOrFail($post);
+      $p->title = $new_data->title;
+      $p->body = $new_data->body;
+      $p->save();
+
+      session()->flash('message','Post updated');
+
+      return redirect("/posts/$p->id");
     }
 
     public function delete($id)
     {
 
-      $post = Post::find($id);
+      $post = Post::findOrFail($id);
 
       $this_posts_comments = $post->comments()->delete();
 
@@ -43,7 +65,6 @@ class PostsController extends Controller
 
     public function new()
     {
-
       return view('posts.new');
     }
 
