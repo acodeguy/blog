@@ -28,4 +28,11 @@ class Post extends Model
       ]);
 
     }
+
+    public function updateComment($body)
+    {
+      $comment = Comment::findOrFail(request('comment'));
+      $comment->body = $body;
+      $comment->save();
+    }
 }

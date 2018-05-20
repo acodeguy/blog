@@ -63,3 +63,8 @@ header {
 a {
   color: rgba(0,0,0,1);
 }
+
+/* stuff hidden by default */
+#frmEditComment {
+  display: none;
+}

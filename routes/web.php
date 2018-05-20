@@ -10,6 +10,7 @@ Route::get('/posts/{post}/edit', 'PostsController@edit');
 Route::patch('/posts/{post}', 'PostsController@update');
 Route::post('/posts', 'PostsController@store');
 Route::post('/posts/{post}/comments','CommentsController@store');
+Route::patch('/posts/{post}/comments/{comment}/update','CommentsController@update');
 Route::post('/posts/{post}/comments/{comment}/delete','CommentsController@delete');
 
 Auth::routes();

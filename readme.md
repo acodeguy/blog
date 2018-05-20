@@ -17,13 +17,15 @@
 8. delete comments [ADDED: 4/MAY/2018]
 9. update posts
 10. post tags
-11. update comments
+11. update comments [ADDED: 20/MAY/2018]
 12. snazzier UI
 13. soft-deletion of posts (for possible retrieval later)
 14. move sour code button to nav area, condense text [ADDED: 7/MAY/18]
+15. post-updated timestamp on post view [ADDED: 20/MAY/18]
 
 ## Issues (ISS#)
 1. Delete comment button visible for all users, including guests [FIXED: 6/MAY/2018]
+2. New Comments pass through without any validation
 
 
 ## Installation

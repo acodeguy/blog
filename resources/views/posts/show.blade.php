@@ -10,7 +10,8 @@
       <div class="card-body">
         <h3 class="card-title">{{ $post->title }}</h3>
         <p class="card-text">{{ $post->body }}</p>
-        <p>{{ $post->created_at->diffForHumans() }} by {{ $post->user->name }}</p>
+        <p><strong>Posted</strong>: {{ $post->created_at->diffForHumans() }} by {{ $post->user->name }}</p>
+        <p><strong>Updated</strong>: {{ $post->updated_at->diffForHumans() }}</p>
       </div>
     </div>
 
@@ -20,7 +21,7 @@
 
       <div class="col">
         <a href="/posts/{{ $post->id }}/edit">
-          <button type="submit" class="btn btn-primary form-control">Edit Post</button>
+          <button type="submit" class="btn btn-info form-control">Edit Post</button>
         </a>
       </div>
 
@@ -49,7 +50,30 @@
         </div>
         <div class="card-body">
           <blockquote class="blockquote mb-0">
-            <p>{{ $comment->body }}</p>
+
+              <p id="postCommentPreForm">{{ $comment->body }}</p>
+
+            <form id="frmEditComment" action="/posts/{{ $post->id }}/comments/{{ $comment->id }}/update" method="post">
+              {{ method_field('PATCH') }}
+
+              @csrf
+
+              <textarea name="body" class="form-control">{{ $comment->body }}</textarea>
+
+              <div class="row">
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+                  <button type="submit" class="btn btn-primary from-control">Update Comment Now</button>
+                </div>
+              </div>
+
+            </form>
+
           </blockquote>
           <div class="text-muted">
             {{ $comment->created_at->diffForHumans() }}
@@ -59,10 +83,19 @@
             <div class="row">
 
               <div class="col comment-controls">
-                <form action="/posts/{{ $post->id }}/comments/{{ $comment->id }}/delete" method="post">
-                  @csrf
-                  <button type="submit" class="btn btn-danger">Delete Comment</button>
-                </form>
+
+                <div class="row">
+                  <div class="col-sm">
+                    <button type="button" id="btnEditComment" class="btn btn-info form-control">Edit Comment</button>
+                  </div>
+                  <div class="col-sm">
+                    <form action="/posts/{{ $post->id }}/comments/{{ $comment->id }}/delete" method="post">
+                      @csrf
+                      <button type="submit" class="btn btn-danger form-control">Delete Comment</button>
+                    </form>
+                  </div>
+                </div>
+
               </div>
 
             </div>
