@@ -25,7 +25,7 @@
 
 ## Issues (ISS#)
 1. Delete comment button visible for all users, including guests [FIXED: 6/MAY/2018]
-2. New Comments pass through without any validation
+2. New Comments pass through without any validation [FIXED: 27/MAY/2018]
 
 
 ## Installation

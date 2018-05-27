@@ -115,7 +115,7 @@
     <form action="/posts/{{ $post->id }}/comments" method="post">
       @csrf
       <div class="form-group">
-        <textarea class="form-control" name="body" rows="3" placeholder="Your comments..." required></textarea>
+        <textarea class="form-control" name="body" rows="3" placeholder="Your comments..." required>{{ old('body') }}</textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary form-control">Add Comments</button>

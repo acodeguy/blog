@@ -8,8 +8,12 @@ use App\Post;
 
 class CommentsController extends Controller
 {
-    public function store(Post $post)
+    public function store(Post $post, Request $new_data)
     {
+
+      $validatedData = $new_data->validate([
+        'body' => 'required|min:5|max:1024'
+      ]);
 
       $post->addComment(request('body'));
 
