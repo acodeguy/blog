@@ -11,9 +11,9 @@
 - add text posts
 - delete posts - by authenticated user only (takes all associated comments with the post)
 - add comments
+- update posts
 - new post validation [4/MAY/2018]
 - delete comments [ADDED: 4/MAY/2018]
-- update posts
 - update comments [ADDED: 20/MAY/2018]
 - move source code button to nav area, condense text [ADDED: 7/MAY/18]
 - post-updated timestamp on post view [ADDED: 20/MAY/18]
@@ -27,11 +27,10 @@
 
 ## Issues (ISS#)
 - Delete comment button visible for all users, including guests [FIXED: 6/MAY/2018]
-- New Comments pass through without any validation [FIXED: 27/MAY/2018]
+- New comments pass through without any validation [FIXED: 27/MAY/2018]
 
 
 ## Installation
-
 - clone the repo `git clone https://github.com/acodeguy/blog.git`
 - rename .env.example to .env: `mv .env.example .env`
 - generate a new app key: `php artisan key:generate`
