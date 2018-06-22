@@ -68,3 +68,12 @@ a {
 #frmEditComment {
   display: none;
 }
+
+/** small screens **/
+
+@media (max-width: 650px) {
+  #app {
+    width: 95%;
+    margin: none;
+  }
+}
