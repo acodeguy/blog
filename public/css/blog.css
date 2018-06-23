@@ -1,5 +1,5 @@
 #app {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -15,16 +15,9 @@ header {
   margin: 0 0 50px 0;
 }
 
-#site-subtitle {
-  margin: 0 auto;
-}
-
-#site-subtitle p {
-  font-size: 20px;
-}
-
 #auth_user_controls {
   margin: 10px 0 15px 0;
+  float: left;
 }
 
 .index-post-card {

@@ -70,11 +70,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-
-        <div id="site-subtitle">
-            <p>A blog by a blogger</p>
-        </div> 
+          </nav>
 
         <!-- buttons: new post, etc -->
 
