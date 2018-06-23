@@ -2,11 +2,16 @@
 
 body {
   background-color: rgba(115,115,115,1);
+  margin: 15px 0 0 0;
 }
 
 #app {
   width: 90%;
   margin: 0 auto;
+}
+
+nav {
+  border-radius: 10px;
 }
 
 .navbar-brand {
@@ -37,6 +42,7 @@ header {
 .card-text {
   font-size: 26px;
   font-family: "Open Sans Condensed";
+  font-weight: 500;
 }
 
 .card-title {
