@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Spirax+Open+Sans+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Spirax|Open+Sans+Condensed:300');
 #app {
   width: 90%;
   margin: 0 auto;
@@ -30,12 +30,16 @@ header {
 }
 
 .card-text {
-  font-size: 18px;
+  font-size: 26px;
+  font-family: "Open Sans Condensed";
 }
 
 .card-title {
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-size: 30px;
+  line-height: 50px;
+  border-bottom: 2px dotted rgba(0,0,0,1);
 }
 
 .comment-card {
