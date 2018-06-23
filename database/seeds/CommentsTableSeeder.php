@@ -14,9 +14,9 @@ class CommentsTableSeeder extends Seeder
     {
         DB::table('comments')->insert([
             'id' => 1,
-            'user_id' => 2,
+            'user_id' => 1,
             'post_id' => 1,
-            'body' => "That is a great idea, I will fork the code for myself! Thanks!",
+            'body' => "This is a comment. There are many like it but this one is mine.",
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
