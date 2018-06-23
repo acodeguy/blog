@@ -21,11 +21,10 @@
   </div>
 </div>
 
-<script src="/lib/summernote/summernote-bs4.min.js"></script>
-<script>
-$(document).ready(function(){
+<script src="/lib/summernote/summernote-bs4.min.js">
+  $(document).ready(function(){
 
-$('#summernote').summernote(
+$('#summernote').summernote({
   toolbar: [
     // [groupName, [list of button]]
     ['style', ['bold', 'italic', 'underline', 'clear']],
@@ -35,8 +34,8 @@ $('#summernote').summernote(
     ['para', ['ul', 'ol', 'paragraph']],
     ['height', ['height']]
   ]
-);
-
 });
+    
+  });
 </script>
 @endsection
