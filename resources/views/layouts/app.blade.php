@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/blog.css">
     <script src="/js/app.js"></script>
-    <title>The Blog</title>
+    <title>Bloggit</title>
   </head>
   <body>
 
@@ -91,11 +91,6 @@
       <div class="row">
 
         <div class="col-lg-12">
-
-          <div id="project-info">
-            <h1>{{ config('app.name') }}</h1>
-            <p>A blog site, running on Laravel by <a href="https://acodeguy.com">A Code Guy</a></p>
-          </div>
 
           @if($errors->any())
             <div class="alert alert-danger error">
