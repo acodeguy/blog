@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Carbon\Carbon;
 
-class UsersTableSeeder extends Seeder
+class CommentsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,11 +12,11 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        DB::table('comments')->insert([
             'id' => 1,
-            'name' => 'Admin',
-            'email' => 'change@me.co',
-            'password' => bcrypt('Laravel is pretty sweet 123'),
+            'user_id' => 2,
+            'post_id' => 1,
+            'body' => "That is a great idea, I will fork the code for myself! Thanks!",
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
