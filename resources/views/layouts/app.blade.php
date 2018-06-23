@@ -25,12 +25,6 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name') }}
                 </a>
-
-                {{-- <li class="nav-item"> --}}
-                    <a class="nav-link" href="https://github.com/acodeguy/blog" target="_blank">
-                      <button type="button" class="btn btn-info">Source Code @ GitHub</button>
-                    </a>
-                {{-- </li> --}}
                  
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
