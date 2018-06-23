@@ -9,7 +9,7 @@
     <div class="card index-post-card">
       <div class="card-body">
         <h3 class="card-title">{{ $post->title }}</h3>
-        <p class="card-text">{{ $post->body }}</p>
+        <p class="card-text">{!! $post->body !!}</p>
         <p><strong>Posted</strong>: {{ $post->created_at->diffForHumans() }} by {{ $post->user->name }}</p>
         <p><strong>Updated</strong>: {{ $post->updated_at->diffForHumans() }}</p>
       </div>
