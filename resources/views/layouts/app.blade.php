@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/blog.css">
     <script src="/js/app.js"></script>
-    <title>Bloggit</title>
+    <title>{{ config('app.name') }}</title>
   </head>
   <body>
 
