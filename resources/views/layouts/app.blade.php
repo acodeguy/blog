@@ -25,6 +25,13 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name') }}
                 </a>
+
+                {{-- <li class="nav-item"> --}}
+                    <a class="nav-link" href="https://github.com/acodeguy/blog" target="_blank">
+                      <button type="button" class="btn btn-info">Source Code @ GitHub</button>
+                    </a>
+                {{-- </li> --}}
+                 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -65,14 +72,13 @@
             </div>
         </nav>
 
+        <div id="site-subtitle">
+            <p>A blog by a blogger</p>
+        </div> 
+
         <!-- buttons: new post, etc -->
 
           <ul class="nav" id="auth_user_controls">
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/acodeguy/blog" target="_blank">
-                <button type="button" class="btn btn-info">Source Code @ GitHub</button>
-              </a>
-            </li>
             @if(Auth::id())
             <li class="nav-item">
               <a class="nav-link" href="/posts/new">
