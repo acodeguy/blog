@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Spirax|Open+Sans+Condensed:300');
+
+body {
+  background-color: rgba(115,115,115,1);
+}
+
 #app {
   width: 90%;
   margin: 0 auto;
