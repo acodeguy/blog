@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Spirax');
 #app {
   width: 90%;
   margin: 0 auto;
@@ -5,10 +6,12 @@
 
 .navbar-brand {
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 2.5em;
   letter-spacing: 1.5px;
   font-weight: 800;
   line-height: 50px;
+  /* text-shadow: 3px 1px 1px gray; */
+  font-family: Spirax;
 }
 
 header {
