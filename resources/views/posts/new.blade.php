@@ -12,7 +12,7 @@
         </div>
         <div class="card-body">
           <p class="card-text">
-          <textarea name="body" rows="15" class="form-control" placeholder="Two words combined that can't make sense..." spellcheck="true" required>{{ old('body') }}</textarea>
+          <textarea name="body" id="summernote" rows="15" class="form-control" placeholder="Two words combined that can't make sense..." spellcheck="true" required>{{ old('body') }}</textarea>
           </p>
         </div>
         <input type="submit" class="form-control btn btn-primary" value="Submit this Post">
@@ -20,4 +20,13 @@
     </form>
   </div>
 </div>
+
+<script src="/lib/summernote/summernote-bs4.min.js"></script>
+<script>
+$(document).ready(function(){
+
+$('#summernote').summernote();
+
+});
+</script>
 @endsection
