@@ -16,7 +16,7 @@ class UsersTableSeeder extends Seeder
             'id' => 1,
             'name' => 'Admin',
             'email' => 'admin@blog',
-            'password' => bcrypt('Laravel is pretty sweet 123'),
+            'password' => bcrypt(getenv('ADMIN_PW')),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);

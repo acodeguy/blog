@@ -33,6 +33,7 @@
 ## Installation
 - clone the repo `git clone https://github.com/acodeguy/blog.git`
 - rename .env.example to .env: `mv .env.example .env`
+- setup your admin password: enter a secure password in the for the `ADMIN_PW=` variable in the .env file
 - generate a new app key: `php artisan key:generate`
-- setup the database `php artisan migrate`
+- setup and seed the database `php artisan migrate:refresh --seed`
 - serve /public/index.php
