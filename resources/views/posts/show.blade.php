@@ -6,14 +6,17 @@
 
 <div class="row">
   <div class="col-lg-12">
-    <div class="card index-post-card">
-      <div class="card-body">
-        <h3 class="card-title">{{ $post->title }}</h3>
-        <p class="card-text">{!! $post->body !!}</p>
-        <p><strong>Posted</strong>: {{ $post->created_at->diffForHumans() }} by {{ $post->user->name }}</p>
-        <p><strong>Updated</strong>: {{ $post->updated_at->diffForHumans() }}</p>
-      </div>
-    </div>
+
+	    <div class="card index-post-card">
+				<article>
+		      <div class="card-body">
+		        <h3 class="card-title">{{ $post->title }}</h3>
+		        <p class="card-text">{!! $post->body !!}</p>
+		        <p><strong>Posted</strong>: {{ $post->created_at->diffForHumans() }} by {{ $post->user->name }}</p>
+		        <p><strong>Updated</strong>: {{ $post->updated_at->diffForHumans() }}</p>
+		      </div>
+				</article>
+	    </div>
 
     @if($post->user_id == Auth::id())
 
