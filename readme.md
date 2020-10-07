@@ -1,7 +1,3 @@
-### The Blog
-## A blog solution by [A Code Guy](https://acodeguy.com)
-## See the [Live Demo](https://blog.acodeguy.com)
-
 ## Info
 - Runs on Laravel 5.6
 - Uses a MySQL database
